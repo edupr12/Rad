@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <script>
+            function maiorVetor(){
+        var N1= Number(document.getElementById("N1").value);
+        var N2= Number(document.getElementById("N2").value);
+        var N3= Number(document.getElementById("N3").value);
+        var N4= Number(document.getElementById("N4").value);
+        var N5= Number(document.getElementById("N5").value);
+        var saida = document.getElementById("saida");
+        var vetor= [N1,N2,N3,N4,N5];
+
+        var maior = vetor[0];
+       
+       for(i=1;i<5;i++){
+                if(vetor[i]>maior)
+                    maior=vetor[i];
+       }
+                     saida.innerText= "O maior eh " +maior;
+            }       
+     </script>
+     </head>   
+        <body>
+            <label>N1:</label> <!-- Escreve antes do campo -->
+            <input id="N1"> 
+            <br>
+
+            <label>N2:</label>
+            <input id="N2"> 
+             <br>
+
+            <label>N3:</label>
+            <input id="N3"> 
+             <br>
+
+            <label>N4:</label>
+            <input id="N4">
+             <br>
+
+            <label>N5:</label>
+            <input id="N5">  
+             <br>
+             
+            <input type="button" value="Maior" onclick="maiorVetor()"/>     
+
+            <label id="saida"> </label>
+            
+            </body> 
+    
+</html>
