@@ -1,0 +1,42 @@
+<html>
+
+    <head>
+
+        <script>
+            function maiorNumero(){
+                var N1 = Number (document.getElementById("N1").value);
+                var N2 = Number (document.getElementById("N2").value);
+                var N3 = Number (document.getElementById("N3").value);
+                var resultado = document.getElementById("resultado");
+                var maior;
+
+                if(N1 > N2 && N1 > N3){
+                    maior = N1;
+                }else if(N2 > N1 && N2 > N3){
+                    maior = N2;
+                }else{
+                    maior = N3;
+                }
+                resultado.innerText= "O maior eh " +maior;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        
+
+        <label>N1:</label>
+        <input id="N1">
+
+        <label>N2:</label>
+         <input id="N2">
+        
+        <label>N3:</label>
+         <input id="N3">
+
+        <input type="button" value="Maior" onclick="maiorNumero()"/>
+        		<label id="resultado"> </label>
+
+    </body>
+</html>
